@@ -17,7 +17,7 @@ create table tbl_estudante (
     data_nascimento date not null,
     cpf varchar(11) not null,
     email varchar(100) not null,
-    senha varchar(50),
+    senha varchar(50) not null,
     ativo BOOLEAN not null default 0
 );
 
@@ -27,7 +27,7 @@ create table tbl_psicologo (
     data_nascimento date not null,
     cpf varchar(11) not null,
     email varchar(100) not null,
-    senha varchar(50),
+    senha varchar(50) not null,
     ativo BOOLEAN not null default 0,
     crp VARCHAR(5) not null
 );
